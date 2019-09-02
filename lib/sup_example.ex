@@ -4,7 +4,8 @@ defmodule SupExample do
   def start(_type, _args) do
     children = [
       {Parser, []},
-      {Dummy, []}
+      {Dummy, []},
+      {Stack, []}
     ]
 
     opts = [strategy: :one_for_one, name: SubExampleSup]
